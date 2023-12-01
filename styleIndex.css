@@ -1,0 +1,150 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&family=Inria+Sans:wght@400;700&family=Ubuntu&display=swap');
+ *{ box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size:18px;
+    justify-content:center;
+  }
+
+ body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(Resources/AbstractBg.png) ;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+}
+h1{
+    font-size:2rem;
+    display: flex;
+}
+
+header {
+    display:flex;
+    background-color:#C4E0FD;
+    justify-content:flex-end;
+    align-items: center;
+    height: 15vh;
+    padding: 5px 10%;
+    word-spacing: 40px;
+    margin-bottom: 9rem;
+   
+}
+header .navlist {
+    list-style:none;
+    text-decoration: none;
+    
+  }
+  
+  header .navlist a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  header .navlist li{
+    display:inline-block;
+  }
+
+  img{
+    width: 20vh;
+    margin-right: 60rem;
+  }
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #d7e3eb;
+    flex-direction: column;
+    min-width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding:35px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin-top: 1rem;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+  
+  }
+   
+#container.visible {
+  opacity: 1; 
+}
+
+#button{
+    border-radius: 10px;
+    padding: 1%;
+    cursor:pointer;
+    position: absolute;
+    background-color: #46A1FF;
+    color: #ffffff;
+    margin-left:45%;
+    margin-top:2%;
+
+}
+
+#button.visible {
+    top: 60%; /* Nueva posición cuando el contenedor es visible */
+}
+
+#header{
+    margin-top: 10rem;
+    margin-left: 40rem;
+
+}
+
+.mobileMenu{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+header{
+margin-bottom: 8rem;
+}
+  img{
+    margin-right: 3vw;
+    margin-top: 1rem;
+  }
+  .navlist-invisible{
+    display: none;
+    list-style: none;
+  }
+
+  .mobileMenu{
+    display: block;
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
+  }
+
+#container{
+    margin-top: 3rem;
+    font-size: 12px;
+    text-align: center;
+    padding: 5%;
+}
+#button{
+    margin-left: 29%;
+}
+#button.visible{
+    top: 72%;
+}
+    
+}
