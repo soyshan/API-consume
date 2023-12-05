@@ -1,5 +1,5 @@
 # API-consume
-##NotBored
+
 ![logolanding](https://github.com/soyshan/API-consume/assets/109847605/a30ab674-e654-4b48-9d40-ffe4d496442f)
 
 This is a project where I'm using an API called "BoredApi" (https://www.boredapi.com/). The API provides random activity ideas for users to do when they are bored.
